@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, WordDetails, WordList } from "./Components";
+import { Navbar, WordList } from "./Components";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,6 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<WordList />
-			<WordDetails />
 		</div>
 	);
 }

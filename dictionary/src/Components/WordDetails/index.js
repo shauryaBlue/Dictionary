@@ -1,8 +1,14 @@
-import { Box, Divider, Typography, ListItem } from "@material-ui/core";
+import {
+	Box,
+	Divider,
+	Typography,
+	ListItem,
+	IconButton
+} from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
 import React from "react";
 
-const WordDetails = ({ item }) => {
+const WordDetails = props => {
 	return (
 		<Box
 			style={{
@@ -12,9 +18,13 @@ const WordDetails = ({ item }) => {
 				background: "white"
 			}}
 		>
-			<Box>
-				<ClearIcon style={{ marginLeft: "80vw" }} />
-			</Box>
+			{console.log(props.onClick)}
+			<IconButton
+				onClick={() => props.onClick()}
+				style={{ marginLeft: "80vw" }}
+			>
+				<ClearIcon />
+			</IconButton>
 			<Box>
 				<Typography style={{ fontWeight: "semi-bold", fontSize: 32 }}>
 					resource
